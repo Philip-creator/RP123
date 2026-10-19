@@ -1,0 +1,30 @@
+@page
+@model RP123.Pages.PTApp.Invoices.IndexModel
+
+<h1>Invoices</h1>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Customer</th>
+            <th>Invoice Date</th>
+            <th>Amount</th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (var inv in Model.Invoices)
+    {
+        <tr>
+            <td>@inv.Id</td>
+            <td>@inv.Customer?.Name</td>
+            <td>@inv.InvoiceDate.ToLocalTime().ToString("g")</td>
+            <td>@inv.Amount</td>
+        </tr>
+    }
+    </tbody>
+</table>
