@@ -1,0 +1,26 @@
+@page
+@model RP123.Pages.PTApp.SalesOrders.IndexModel
+
+<h1>Sales Orders</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Customer</th>
+            <th>Order Date</th>
+            <th>Total</th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (var o in Model.Orders)
+    {
+        <tr>
+            <td>@o.Id</td>
+            <td>@o.Customer?.Name</td>
+            <td>@o.OrderDate.ToLocalTime().ToString("g")</td>
+            <td>@o.TotalAmount</td>
+        </tr>
+    }
+    </tbody>
+</table>

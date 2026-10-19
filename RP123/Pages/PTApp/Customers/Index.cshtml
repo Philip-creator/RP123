@@ -1,0 +1,31 @@
+@page
+@model RP123.Pages.PTApp.Customers.IndexModel
+
+<h1>Customers</h1>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (var c in Model.Customers)
+    {
+        <tr>
+            <td>@c.Id</td>
+            <td>@c.Name</td>
+            <td>@c.Email</td>
+            <td>@c.Phone</td>
+        </tr>
+    }
+    </tbody>
+</table>

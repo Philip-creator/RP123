@@ -1,0 +1,1 @@
+email: dev@test.local, password: P@ssw0rd!) and sets EmailConfirmed = true.
