@@ -1,0 +1,5 @@
+Add helpful notes, scripts, or sample connection strings here. Do not store credentials or secrets in this repository.
+
+Sample LocalDB connection string:
+Server=(localdb)\mssqllocaldb;Database=PTAppDev;Trusted_Connection=True;MultipleActiveResultSets=true
+

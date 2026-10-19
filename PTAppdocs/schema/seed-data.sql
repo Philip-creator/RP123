@@ -1,0 +1,3 @@
+-- Paste INSERT statements or seed data here to be imported into the new database for testing.
+-- Example:
+-- INSERT INTO Customer (CustomerId, Name) VALUES (1, 'Test Customer');
